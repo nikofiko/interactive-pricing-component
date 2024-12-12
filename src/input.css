@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-range {
+    background: linear-gradient(to right, #10c3b4 0%, #10c3b4 50%, #fff 50%, #fff 100%);
+    border: solid 1px #10c3b4;
+    border-radius: 8px;
+    height: 7px;
+    width: 410px;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+@media (max-width: 376px){
+    .custom-range{
+        width:310px;
+    }
+}
+
+#myinput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    box-shadow: rgb(14, 212, 195) 0px 20px 25px -10px;
+    background: #10c3b4;
+    background-size: 25px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+  }    
+
+#myinput::-webkit-slider-thumb:hover{
+    background-image: url('/images/icon-slider.svg');
+}
+
+.custom-shadow {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
