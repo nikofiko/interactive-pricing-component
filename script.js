@@ -35,4 +35,12 @@ inputSwitch.addEventListener("click", ()=> {
         h3.textContent = "/month"
         clicked = 0
     }
+
+    if(clicked === 0){
+        monthlyCost.innerHTML = `$${input.value}.00`
+        console.log("a", clicked)
+    }else if(clicked === 1){
+        monthlyCost.innerHTML = `$${input.value * 12}.00`
+        console.log("b", clicked)
+    }
 })
